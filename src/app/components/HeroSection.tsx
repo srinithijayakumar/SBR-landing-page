@@ -24,8 +24,8 @@ export function HeroSection() {
                 <span className="sm:hidden">Local Classifieds</span>
               </span>
             </div>
-            <h1 className="text-mobile-xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] tracking-tight w-full">
-              Buy, Sell, and Discover in Your City.
+            <h1 className="text-mobile-xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.2] tracking-tight w-full">
+              Buy, Sell, and Discover<br className="hidden sm:block" /> in Your City.
             </h1>
             <p className="text-mobile-xs sm:text-xl text-slate-600 leading-relaxed w-full">
               Post ads in seconds, chat directly with verified buyers, and find the best local deals securely.
