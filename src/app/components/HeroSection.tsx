@@ -1,5 +1,9 @@
-import { Apple, Play, Search, MapPin, Heart } from 'lucide-react';
+import { Search, MapPin, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
+
+// Import app store logos
+import appStoreLogo from '../../assest/Images/appstore.svg';
+import playStoreLogo from '../../assest/Images/playstore.svg';
 
 export function HeroSection() {
   return (
@@ -32,14 +36,14 @@ export function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 pt-2 sm:pt-4 w-full">
               <button className="group flex items-center justify-center gap-1 sm:gap-3 px-3 sm:px-8 py-2 sm:py-4 bg-slate-900 text-white rounded-mobile sm:rounded-2xl font-semibold hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 flex-1">
-                <Apple className="w-3 sm:w-6 h-3 sm:h-6 flex-shrink-0" />
+                <img src={appStoreLogo} alt="App Store" className="w-6 sm:w-8 h-6 sm:h-8 flex-shrink-0" />
                 <div className="text-left flex-shrink-0">
                   <div className="text-mobile-xs opacity-90">Download on the</div>
                   <div className="text-mobile-xs sm:text-base font-bold">App Store</div>
                 </div>
               </button>
               <button className="group flex items-center justify-center gap-1 sm:gap-3 px-3 sm:px-8 py-2 sm:py-4 bg-slate-900 text-white rounded-mobile sm:rounded-2xl font-semibold hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 flex-1">
-                <Play className="w-3 sm:w-6 h-3 sm:h-6 fill-current flex-shrink-0" />
+                <img src={playStoreLogo} alt="Google Play" className="w-6 sm:w-8 h-6 sm:h-8 flex-shrink-0" />
                 <div className="text-left flex-shrink-0">
                   <div className="text-mobile-xs opacity-90">Get it on</div>
                   <div className="text-mobile-xs sm:text-base font-bold">Google Play</div>

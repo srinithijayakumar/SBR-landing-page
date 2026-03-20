@@ -1,4 +1,8 @@
-import { Apple, Play, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
+
+// Import app store logos
+import appStoreLogo from '../../assest/Images/appstore.svg';
+import playStoreLogo from '../../assest/Images/playstore.svg';
 
 export function CTASection() {
   return (
@@ -32,17 +36,17 @@ export function CTASection() {
             </p>
 
             {/* Download Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-2 sm:pt-4">
-              <button className="group flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white text-slate-900 rounded-2xl font-semibold hover:bg-slate-100 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
-                <Apple className="w-5 sm:w-6 h-5 sm:h-6" />
-                <div className="text-left">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-2 sm:pt-4 ">
+              <button className="group flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-slate-900 text-white rounded-2xl font-semibold bg-slate-900 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                <img src={appStoreLogo} alt="App Store" className="w-5 sm:w-6 h-5 sm:h-6" />
+                <div className="text-left ">
                   <div className="text-xs opacity-70">Download on the</div>
-                  <div className="text-sm sm:text-base font-bold">App Store</div>
+                  <div className="text-sm sm:text-base font-bold  ">App Store</div>
                 </div>
               </button>
 
               <button className="group flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-slate-900 text-white rounded-2xl font-semibold hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
-                <Play className="w-5 sm:w-6 h-5 sm:h-6 fill-current" />
+                <img src={playStoreLogo} alt="Google Play" className="w-5 sm:w-6 h-5 sm:h-6" />
                 <div className="text-left">
                   <div className="text-xs opacity-90">Get it on</div>
                   <div className="text-sm sm:text-base font-bold">Google Play</div>
