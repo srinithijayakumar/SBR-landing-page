@@ -25,27 +25,29 @@ export function CategoriesSection() {
   return (
     <section id="categories" className="py-8 sm:py-24 bg-white scroll-mt-24">
       <div className="w-full px-4 md:px-20">
+        {/* Header Section - Left Aligned like Trip Planners */}
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, ease: [0.21, 0.8, 0.32, 1] }}
-          className="text-center mb-12 sm:mb-20"
+          className="mb-12 sm:mb-16"
         >
-          <h2 className="text-mobile-lg sm:text-4xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mb-2 sm:mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
             Discover Everything You Need
           </h2>
-          <p className="text-mobile-xs sm:text-xl text-slate-600 max-w-2xl mx-auto">
-            Browse through our diverse categories and find exactly what you're looking for.
+          <p className="text-lg text-slate-600 max-w-xl">
+            Browse through our diverse categories and find exactly what you're looking for in your local area.
           </p>
         </motion.div>
 
+        {/* Cards Grid - Similar to Trip Planners layout */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: [0.21, 0.8, 0.32, 1] }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
         >
           {categories.map((category, index) => (
             <motion.div
@@ -54,20 +56,25 @@ export function CategoriesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative aspect-square rounded-2xl md:rounded-3xl overflow-hidden cursor-pointer"
+              className="group cursor-pointer"
             >
-              {/* Image */}
-              <img
-                src={category.image}
-                alt={category.name}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              
-              {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <h3 className="text-white text-lg md:text-xl font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
-                  {category.name}
-                </h3>
+              {/* Card - Similar to Trip Planners style */}
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                {/* Image */}
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                
+                {/* Card Content */}
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-slate-900 group-hover:text-[#1C6EF2] transition-colors duration-300">
+                    {category.name}
+                  </h3>
+                </div>
               </div>
             </motion.div>
           ))}
