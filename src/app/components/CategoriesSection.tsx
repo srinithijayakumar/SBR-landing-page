@@ -23,7 +23,7 @@ const categories = [
 
 export function CategoriesSection() {
   return (
-    <section id="categories" className="py-8 sm:py-24  scroll-mt-24">
+    <section id="categories" className="pt-4 sm:pt-12 pb-8 sm:pb-24 bg-white scroll-mt-24">
       <div className="w-full px-4 md:px-20">
         {/* Header Section - Centered */}
         <motion.div
@@ -33,7 +33,7 @@ export function CategoriesSection() {
           transition={{ duration: 0.6, ease: [0.21, 0.8, 0.32, 1] }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-slate-900 mb-4">
             Discover Everything You Need  
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
