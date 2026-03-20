@@ -58,8 +58,8 @@ export function CategoriesSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group cursor-pointer"
             >
-              {/* Image Card - Just like in the picture */}
-              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              {/* Image Card - Increased height */}
+              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <img
                   src={category.image}
                   alt={category.name}
