@@ -2,6 +2,24 @@
 @import './tailwind.css';
 @import './theme.css';
 
+/* Auto-scroll animation for category cards */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
 /* Global mobile overflow prevention */
 @media (max-width: 374px) {
   html, body {
@@ -15,6 +33,10 @@
   
   *:before, *:after {
     box-sizing: border-box !important;
+  }
+  
+  .animate-scroll {
+    animation: scroll 15s linear infinite;
   }
 }
  

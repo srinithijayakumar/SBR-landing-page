@@ -41,40 +41,43 @@ export function CategoriesSection() {
           </p>
         </motion.div>
 
-        {/* Cards Grid - All 8 cards in one row */}
+        {/* Cards Grid - Auto-scrolling horizontal carousel */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: [0.21, 0.8, 0.32, 1] }}
-          className="grid grid-cols-4 md:grid-cols-8 gap-3 md:gap-4"
+          className="relative overflow-hidden"
         >
-          {categories.map((category, index) => (
-            <motion.div
-              key={category.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group cursor-pointer"
-            >
-              {/* Image Card - Increased height */}
-              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <img
-                  src={category.image}
-                  alt={category.name}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                
-                {/* Category Name on Hover */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                  <h3 className="text-white text-lg md:text-xl font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
-                    {category.name}
-                  </h3>
+          <div className="flex gap-4 md:gap-6 animate-scroll">
+            {/* Duplicate cards for seamless loop */}
+            {[...categories, ...categories].map((category, index) => (
+              <motion.div
+                key={`${category.name}-${index}`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: (index % 8) * 0.1 }}
+                className="group cursor-pointer flex-shrink-0 w-32 md:w-40"
+              >
+                {/* Image Card - Increased height */}
+                <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  
+                  {/* Category Name on Hover */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
+                    <h3 className="text-white text-lg md:text-xl font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                      {category.name}
+                    </h3>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>
