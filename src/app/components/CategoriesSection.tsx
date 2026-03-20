@@ -1,21 +1,30 @@
-import { Smartphone, Car, Home, Sofa, Briefcase, Wrench, ShoppingBag, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+// Import all category images
+import electronicsImg from '../../assest/Images/Electronics.jpg';
+import vehiclesImg from '../../assest/Images/vehicles.jpg';
+import realEstateImg from '../../assest/Images/real-estate.jpg';
+import furnitureImg from '../../assest/Images/Furniture.jpg';
+import jobsImg from '../../assest/Images/Jobs.jpg';
+import servicesImg from '../../assest/Images/Servies.jpg';
+import fashionImg from '../../assest/Images/fashion.jpg';
+import booksImg from '../../assest/Images/books.jpg';
+
 const categories = [
-  { name: 'Electronics', icon: Smartphone, gradient: 'from-blue-500 to-cyan-500' },
-  { name: 'Vehicles', icon: Car, gradient: 'from-purple-500 to-pink-500' },
-  { name: 'Real Estate', icon: Home, gradient: 'from-orange-500 to-red-500' },
-  { name: 'Furniture', icon: Sofa, gradient: 'from-green-500 to-emerald-500' },
-  { name: 'Jobs', icon: Briefcase, gradient: 'from-indigo-500 to-blue-500' },
-  { name: 'Services', icon: Wrench, gradient: 'from-yellow-500 to-orange-500' },
-  { name: 'Fashion', icon: ShoppingBag, gradient: 'from-pink-500 to-rose-500' },
-  { name: 'Books', icon: BookOpen, gradient: 'from-violet-500 to-purple-500' },
+  { name: 'Electronics', image: electronicsImg, description: 'Phones, Laptops, Gadgets' },
+  { name: 'Vehicles', image: vehiclesImg, description: 'Cars, Bikes, Trucks' },
+  { name: 'Real Estate', image: realEstateImg, description: 'Houses, Apartments, Land' },
+  { name: 'Furniture', image: furnitureImg, description: 'Sofas, Tables, Beds' },
+  { name: 'Jobs', image: jobsImg, description: 'Full-time, Part-time, Freelance' },
+  { name: 'Services', image: servicesImg, description: 'Repair, Cleaning, Maintenance' },
+  { name: 'Fashion', image: fashionImg, description: 'Clothes, Shoes, Accessories' },
+  { name: 'Books', image: booksImg, description: 'Novels, Textbooks, Comics' },
 ];
 
 export function CategoriesSection() {
   return (
-    <section id="categories" className="py-8 sm:py-24 bg-white scroll-mt-24 mobile-container no-scroll-mobile">
-      <div className="w-full container-mobile sm:px-6 lg:px-8">
+    <section id="categories" className="py-8 sm:py-24 bg-slate-50 scroll-mt-24">
+      <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -36,26 +45,46 @@ export function CategoriesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: [0.21, 0.8, 0.32, 1] }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-6 mobile-fit"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6"
         >
-          {categories.map((category) => (
-            <div
+          {categories.map((category, index) => (
+            <motion.div
               key={category.name}
-              className="group relative bg-gradient-to-br from-slate-50 to-slate-100/50 rounded-mobile sm:rounded-2xl p-2 sm:p-8 hover:-translate-y-2 transition-all duration-300 cursor-pointer shadow-lg shadow-slate-200/50 hover:shadow-xl hover:shadow-slate-300/50 border border-slate-200/50 w-full"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer hover:-translate-y-2"
             >
-              {/* Icon Container */}
-              <div className={`w-6 sm:w-16 h-6 sm:h-16 mx-auto mb-1 sm:mb-4 rounded-md sm:rounded-2xl bg-gradient-to-br ${category.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                <category.icon className="w-3 sm:w-8 h-3 sm:h-8 text-white" strokeWidth={2.5} />
+              {/* Image Container */}
+              <div className="relative h-32 sm:h-48 overflow-hidden">
+                <img
+                  src={category.image}
+                  alt={category.name}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300" />
+                
+                {/* Hover Text Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                  <div className="text-center text-white px-4">
+                    <h3 className="text-lg sm:text-xl font-bold mb-1">{category.name}</h3>
+                    <p className="text-xs sm:text-sm text-white/90">{category.description}</p>
+                  </div>
+                </div>
               </div>
 
-              {/* Category Name */}
-              <h3 className="text-center font-bold text-slate-900 text-mobile-xs sm:text-lg leading-tight">
-                {category.name}
-              </h3>
+              {/* Bottom Label */}
+              <div className="p-3 sm:p-4">
+                <h3 className="text-center font-semibold text-slate-900 text-sm sm:text-base group-hover:text-[#1C6EF2] transition-colors duration-300">
+                  {category.name}
+                </h3>
+              </div>
 
-              {/* Hover Glow */}
-              <div className="absolute inset-0 rounded-mobile sm:rounded-2xl bg-gradient-to-br from-[#1C6EF2]/0 to-[#1C6EF2]/0 group-hover:from-[#1C6EF2]/5 group-hover:to-purple-500/5 transition-all duration-300 -z-10" />
-            </div>
+              {/* Hover Border Effect */}
+              <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#1C6EF2]/30 transition-all duration-300" />
+            </motion.div>
           ))}
         </motion.div>
       </div>

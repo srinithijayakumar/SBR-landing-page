@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 
 export function HeroSection() {
   return (
-    <section id="home" className="relative pt-4 sm:pt-8 pb-8 sm:pb-24 overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-white scroll-mt-24">
+    <section id="home" className="relative pt-4 sm:pt-8 pb-8 sm:pb-24 overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-white mobile-container no-scroll-mobile scroll-mt-24">
       <div className="absolute inset-0 opacity-[0.05]" style={{
         backgroundImage: 'radial-gradient(circle, #94A3B8 1px, transparent 1px)',
         backgroundSize: '26px 26px'
       }} />
 
-      <div className="relative w-full">
+      <div className="relative w-full container-mobile sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-4 lg:gap-16 items-center mobile-fit">
           <motion.div
             initial={{ opacity: 0, y: 0 }}

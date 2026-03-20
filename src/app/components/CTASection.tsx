@@ -19,18 +19,11 @@ export function CTASection() {
 
           {/* Content */}
           <div className="relative py-12 sm:py-20 px-4 sm:px-8 lg:px-16 text-center space-y-6 sm:space-y-8">
-            {/* Icon/Badge */}
-            <div className="inline-block">
-              <div className="w-16 sm:w-20 h-16 sm:h-20 mx-auto rounded-xl sm:rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center shadow-xl border border-white/30">
-                <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-xl sm:rounded-2xl bg-white/20 flex items-center justify-center shadow-lg">
-                  <Sparkles className="w-5 sm:w-7 h-5 sm:h-7 text-white" strokeWidth={2.5} />
-                </div>
-              </div>
-            </div>
+            
 
             {/* Heading */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-              Ready to Declutter or Discover?
+              Download Now
             </h2>
 
             {/* Subheading */}
