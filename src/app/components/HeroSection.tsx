@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export function HeroSection() {
   return (
-    <section id="home" className="relative pt-12 sm:pt-32 pb-8 sm:pb-24 overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-white mobile-container no-scroll-mobile scroll-mt-24">
+    <section id="home" className="relative pt-4 sm:pt-8 pb-8 sm:pb-24 overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-white mobile-container no-scroll-mobile scroll-mt-24">
       <div className="absolute inset-0 opacity-[0.05]" style={{
         backgroundImage: 'radial-gradient(circle, #94A3B8 1px, transparent 1px)',
         backgroundSize: '26px 26px'
