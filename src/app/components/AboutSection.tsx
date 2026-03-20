@@ -10,7 +10,7 @@ const stats = [
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-8 sm:py-24 scroll-mt-24 mobile-container no-scroll-mobile mx-4 sm:mx-20">
+    <section id="about" className="pt-4 sm:pt-12 pb-8 sm:pb-24 scroll-mt-24">
       <div className="w-full container-mobile sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
