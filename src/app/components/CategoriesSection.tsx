@@ -23,7 +23,7 @@ const categories = [
 
 export function CategoriesSection() {
   return (
-    <section id="categories" className="pt-4 sm:pt-12 pb-8 sm:pb-24 bg-white scroll-mt-24">
+    <section id="categories" className="pt-4 sm:pt-12 pb-4 sm:pb-12 bg-white scroll-mt-24">
       <div className="w-full px-4 md:px-20">
         {/* Header Section - Centered */}
         <motion.div
