@@ -1,5 +1,6 @@
 import { Star } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const reviews = [
   {
@@ -79,6 +80,7 @@ const reviews = [
 export function SocialProofSection() {
   // Duplicate reviews for seamless infinite scroll
   const duplicatedReviews = [...reviews, ...reviews];
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <section className="bg-white py-16 sm:py-24 overflow-hidden">
@@ -104,7 +106,7 @@ export function SocialProofSection() {
             <motion.div
               className="flex gap-6 min-w-max"
               animate={{
-                x: [0, -(408 * reviews.length)], // 384px card + 24px gap = 408px per card
+                x: isHovered ? undefined : [0, -(408 * reviews.length)], // Pause on hover
               }}
               transition={{
                 x: {
@@ -120,6 +122,8 @@ export function SocialProofSection() {
                   key={`${review.name}-${index}`}
                   className="flex-shrink-0 w-96 bg-white rounded-3xl border-2 border-slate-300 
                    hover:shadow-3xl transition-shadow p-8"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
                 >
                   <div className="flex items-center gap-6 mb-6">
                     <img

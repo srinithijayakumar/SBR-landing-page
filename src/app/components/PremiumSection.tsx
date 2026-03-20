@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export function PremiumSection() {
   return (
-    <section id="sell" className="py-16 sm:py-24 bg-white">
+    <section id="sell" className="py-16 sm:py-24 ">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
