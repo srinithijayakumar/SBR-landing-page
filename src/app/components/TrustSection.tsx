@@ -39,7 +39,7 @@ export function TrustSection() {
               <div className="inline-block px-3 sm:px-4 py-2 rounded-full bg-green-50 text-green-600 font-semibold text-xs sm:text-sm border border-green-100 mb-4 sm:mb-6">
                 Your Safety First
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4 sm:mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4 sm:mb-6">
                 A Community Built on Trust
               </h2>
               <p className="text-lg sm:text-xl text-slate-600 leading-relaxed">

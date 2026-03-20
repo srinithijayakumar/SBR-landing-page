@@ -2,6 +2,38 @@
 @import './tailwind.css';
 @import './theme.css';
 
+/* Global container with 5rem margins */
+.page-container {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  max-width: calc(100vw - 10rem);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+  .page-container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-width: calc(100vw - 6rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: calc(100vw - 2rem);
+  }
+}
+
 /* Global mobile overflow prevention */
 @media (max-width: 374px) {
   html, body {
@@ -15,6 +47,12 @@
   
   *:before, *:after {
     box-sizing: border-box !important;
+  }
+  
+  .page-container {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    max-width: calc(100vw - 1rem);
   }
 }
  

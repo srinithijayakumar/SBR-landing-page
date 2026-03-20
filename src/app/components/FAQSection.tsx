@@ -40,7 +40,7 @@ export function FAQSection() {
           transition={{ duration: 0.6, ease: [0.21, 0.8, 0.32, 1] }}
           className="text-center"
         >
-          <h2 className="text-mobile-2xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-mobile-2xl sm:text-4xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             Got Questions? We’ve Got Answers.
           </h2>
           <p className="mt-3 sm:mt-4 text-mobile-sm sm:text-xl text-slate-500">

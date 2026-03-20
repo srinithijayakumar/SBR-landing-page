@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 
 export function HeroSection() {
   return (
-    <section id="home" className="relative pt-4 sm:pt-8 pb-8 sm:pb-24 overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-white mobile-container no-scroll-mobile scroll-mt-24">
+    <section id="home" className="relative pt-4 sm:pt-8 pb-8 sm:pb-24 overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-white scroll-mt-24">
       <div className="absolute inset-0 opacity-[0.05]" style={{
         backgroundImage: 'radial-gradient(circle, #94A3B8 1px, transparent 1px)',
         backgroundSize: '26px 26px'
       }} />
 
-      <div className="relative w-full container-mobile sm:px-6 lg:px-8">
+      <div className="relative w-full">
         <div className="grid lg:grid-cols-2 gap-4 lg:gap-16 items-center mobile-fit">
           <motion.div
             initial={{ opacity: 0, y: 0 }}
@@ -24,7 +24,7 @@ export function HeroSection() {
                 <span className="sm:hidden">Local Classifieds</span>
               </span>
             </div>
-            <h1 className="text-mobile-xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.2] tracking-tight w-full">
+            <h1 className="text-mobile-xl sm:text-5xl lg:text-20xl font-extrabold text-slate-900 leading-[1.2] tracking-tight w-full">
               Buy, Sell, and Discover<br className="hidden sm:block" /> in Your City.
             </h1>
             <p className="text-mobile-xs sm:text-xl text-slate-600 leading-relaxed w-full">

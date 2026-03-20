@@ -23,7 +23,7 @@ export function CategoriesSection() {
           transition={{ duration: 0.6, ease: [0.21, 0.8, 0.32, 1] }}
           className="text-center mb-6 sm:mb-16"
         >
-          <h2 className="text-mobile-lg sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-2 sm:mb-4">
+          <h2 className="text-mobile-lg sm:text-4xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mb-2 sm:mb-4">
             Discover Everything You Need
           </h2>
           <p className="text-mobile-xs sm:text-xl text-slate-600 max-w-2xl mx-auto">

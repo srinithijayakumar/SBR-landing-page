@@ -22,7 +22,7 @@ export function AboutSection() {
           <div className="inline-block px-2 sm:px-4 py-1 sm:py-2 rounded-full bg-blue-50 text-[#1C6EF2] font-semibold text-mobile-xs sm:text-sm border border-blue-100 mb-4 sm:mb-6">
             About SBR
           </div>
-          <h2 className="text-mobile-lg sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-3 sm:mb-6">
+          <h2 className="text-mobile-lg sm:text-4xl lg:text-60xl font-extrabold text-slate-900 tracking-tight mb-3 sm:mb-6">
             Revolutionizing Local Commerce
           </h2>
           <p className="text-mobile-xs sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">

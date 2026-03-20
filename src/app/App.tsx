@@ -11,17 +11,19 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white mobile-container no-scroll-mobile">
-      <Navigation />
-      <HeroSection />
-      <AboutSection />
-      <CategoriesSection />
-      <PremiumSection />
-      <TrustSection />
-      <SocialProofSection />
-      <FAQSection />
-      <CTASection />
-      <Footer />
+    <div className="min-h-screen bg-white">
+      <div className="page-container">
+        <Navigation />
+        <HeroSection />
+        <AboutSection />
+        <CategoriesSection />
+        <PremiumSection />
+        <TrustSection />
+        <SocialProofSection />
+        <FAQSection />
+        <CTASection />
+        <Footer />
+      </div>
     </div>
   );
 }

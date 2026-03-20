@@ -21,7 +21,7 @@ export function PremiumSection() {
             <div className="inline-block px-3 sm:px-4 py-2 rounded-full bg-gradient-to-r from-[#1C6EF2]/10 to-purple-500/10 text-[#1C6EF2] font-semibold text-xs sm:text-sm border border-[#1C6EF2]/20 mb-4 sm:mb-6">
               Premium Features
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
               Sell Faster with Premium Ads
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
@@ -85,9 +85,7 @@ export function PremiumSection() {
 
           {/* CTA */}
           <div className="text-center mt-12">
-            <button className="px-8 py-4 bg-[#1C6EF2] text-white rounded-xl font-bold hover:bg-[#1557C7] transition-all shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 hover:-translate-y-0.5">
-              Upgrade to Premium
-            </button>
+           
           </div>
         </motion.div>
       </div>

@@ -90,7 +90,7 @@ export function SocialProofSection() {
           transition={{ duration: 0.6, ease: [0.21, 0.8, 0.32, 1] }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             Loved by buyers and sellers.
           </h2>
           <p className="mt-4 text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto">
