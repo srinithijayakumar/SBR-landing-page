@@ -41,43 +41,101 @@ export function CategoriesSection() {
           </p>
         </motion.div>
 
-        {/* Cards Grid - Auto-scrolling horizontal carousel */}
+        {/* Cards Layout - Exactly like the travel image */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: [0.21, 0.8, 0.32, 1] }}
-          className="relative overflow-hidden"
+          className="flex gap-4 md:gap-6 justify-center items-end"
         >
-          <div className="flex gap-4 md:gap-6 animate-scroll">
-            {/* Duplicate cards for seamless loop */}
-            {[...categories, ...categories].map((category, index) => (
-              <motion.div
-                key={`${category.name}-${index}`}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: (index % 8) * 0.1 }}
-                className="group cursor-pointer flex-shrink-0 w-32 md:w-40"
-              >
-                {/* Image Card - Increased height */}
-                <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                  <img
-                    src={category.image}
-                    alt={category.name}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  
-                  {/* Category Name on Hover */}
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                    <h3 className="text-white text-lg md:text-xl font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
-                      {category.name}
-                    </h3>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+          {/* Card 1 - Medium height, left */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="group cursor-pointer"
+          >
+            <div className="relative w-48 h-64 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <img
+                src={categories[0].image}
+                alt={categories[0].name}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
+                <h3 className="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                  {categories[0].name}
+                </h3>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Card 2 - Tall center card (like Paris City Tour) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="group cursor-pointer"
+          >
+            <div className="relative w-52 h-80 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <img
+                src={categories[1].image}
+                alt={categories[1].name}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
+                <h3 className="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                  {categories[1].name}
+                </h3>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Card 3 - Wide medium height */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="group cursor-pointer"
+          >
+            <div className="relative w-56 h-64 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <img
+                src={categories[2].image}
+                alt={categories[2].name}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
+                <h3 className="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                  {categories[2].name}
+                </h3>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Card 4 - Medium height, right */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="group cursor-pointer"
+          >
+            <div className="relative w-48 h-64 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <img
+                src={categories[3].image}
+                alt={categories[3].name}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
+                <h3 className="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                  {categories[3].name}
+                </h3>
+              </div>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
