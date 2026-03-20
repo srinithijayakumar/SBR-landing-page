@@ -9,7 +9,7 @@ export function Navigation() {
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-slate-200/60 mobile-container no-scroll-mobile">
       <div className="w-full container-mobile sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 sm:h-28 mobile-fit">
+        <div className="flex items-center justify-between h-16 sm:h-20 mobile-fit">
           <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
             <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
