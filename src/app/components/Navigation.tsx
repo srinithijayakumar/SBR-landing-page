@@ -1,5 +1,6 @@
 import { Download, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logoImage from '../../assest/Images/SBR-logo.png';
 
 export function Navigation() {
@@ -10,13 +11,13 @@ export function Navigation() {
       <div className="w-full container-mobile sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 sm:h-28 mobile-fit">
           <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
-            <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
+            <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
                 src={logoImage} 
                 alt="SBR Logo" 
                 className="h-16 sm:h-24 w-auto max-h-full"
               />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Menu */}
@@ -30,9 +31,9 @@ export function Navigation() {
             <a href="/#categories" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
               Categories
             </a>
-            <a href="/contact" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
+            <Link to="/contact" className="text-slate-600 hover:text-slate-900 transition-colors font-medium">
               Contact Us
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -81,13 +82,13 @@ export function Navigation() {
               >
                 Categories
               </a>
-              <a 
-                href="/contact" 
+              <Link 
+                to="/contact" 
                 className="block px-3 py-2 text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors font-medium text-mobile-xs"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         )}
