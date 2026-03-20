@@ -60,7 +60,7 @@ export function CategoriesSection() {
                 className="group cursor-pointer flex-shrink-0"
               >
                 {/* Equal sized cards */}
-                <div className="relative w-48 h-64 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative w-48 h-80 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                   <img
                     src={category.image}
                     alt={category.name}
