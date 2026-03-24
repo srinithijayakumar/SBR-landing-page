@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export function TrustSection() {
   return (
-    <section id="safety" className="py-16 sm:py-24 bg-slate-50 scroll-mt-24 mx-4 sm:mx-20">
+    <section id="safety" className="py-16 sm:py-24 scroll-mt-24 mx-4 sm:mx-20">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-16 items-center">
           <div className="relative order-2 lg:order-1">

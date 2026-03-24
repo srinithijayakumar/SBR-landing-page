@@ -1,51 +1,59 @@
-// Static categories data - simple text-based
+// Static categories data - with colored backgrounds
 const categoriesData = [
   {
     "id": 1,
     "name": "Electronics",
     "description": "Gadgets & Tech",
+    "color": "bg-blue-500",
     "icon": "📱"
   },
   {
     "id": 2,
     "name": "Vehicles",
     "description": "Cars & Bikes",
+    "color": "bg-green-500",
     "icon": "🚗"
   },
   {
     "id": 3,
     "name": "Real Estate",
     "description": "Properties",
+    "color": "bg-purple-500",
     "icon": "🏠"
   },
   {
     "id": 4,
     "name": "Furniture",
     "description": "Home & Office",
+    "color": "bg-orange-500",
     "icon": "🪑"
   },
   {
     "id": 5,
     "name": "Jobs",
     "description": "Career Opportunities",
+    "color": "bg-red-500",
     "icon": "💼"
   },
   {
     "id": 6,
     "name": "Services",
     "description": "Professional Services",
+    "color": "bg-teal-500",
     "icon": "🔧"
   },
   {
     "id": 7,
     "name": "Fashion",
     "description": "Clothing & Style",
+    "color": "bg-pink-500",
     "icon": "👕"
   },
   {
     "id": 8,
     "name": "Books",
     "description": "Literature & Learning",
+    "color": "bg-indigo-500",
     "icon": "📚"
   }
 ];
@@ -69,8 +77,10 @@ export function CategoriesSection() {
           {categoriesData.map((category) => (
             <div key={category.id} className="w-full">
               <div className="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md transition-shadow cursor-pointer">
-                <div className="text-3xl mb-3">
-                  {category.icon}
+                <div className={`w-16 h-16 ${category.color} rounded-full flex items-center justify-center mx-auto mb-3`}>
+                  <span className="text-2xl">
+                    {category.icon}
+                  </span>
                 </div>
                 <h3 className="text-sm sm:text-base font-semibold text-slate-900 mb-1">
                   {category.name}

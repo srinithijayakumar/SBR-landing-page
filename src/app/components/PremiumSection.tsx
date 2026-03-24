@@ -10,7 +10,7 @@ export function PremiumSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.6, ease: [0.21, 0.8, 0.32, 1] }}
-          className="relative bg-gradient-to-br from-slate-50 to-white rounded-2xl sm:rounded-3xl p-6 sm:p-12 lg:p-16 border-2 border-transparent shadow-2xl shadow-slate-900/5 overflow-hidden"
+          className="relative  sm:rounded-3xl p-6 sm:p-12 lg:p-16 border-2 border-transparent shadow-2xl shadow-slate-900/5 overflow-hidden"
         >
           {/* Gradient Border Effect */}
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#1C6EF2]/20 via-purple-500/20 to-pink-500/20 -z-10 blur-xl" />
