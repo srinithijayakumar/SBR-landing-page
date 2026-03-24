@@ -1,3 +1,13 @@
+// Import images directly for better performance
+import electronicsImg from '../../assest/Images/Electronics.jpg';
+import vehiclesImg from '../../assest/Images/vehicles.jpg';
+import realEstateImg from '../../assest/Images/real-estate.jpg';
+import furnitureImg from '../../assest/Images/Furniture.jpg';
+import jobsImg from '../../assest/Images/Jobs.jpg';
+import servicesImg from '../../assest/Images/Servies.jpg';
+import fashionImg from '../../assest/Images/fashion.jpg';
+import booksImg from '../../assest/Images/books.jpg';
+
 // Static categories data - no external dependencies
 const categoriesData = [
   {
@@ -49,16 +59,6 @@ const categoriesData = [
     "description": "Literature & Learning"
   }
 ];
-
-// Import images directly for better performance
-import electronicsImg from '../../assest/Images/Electronics.jpg';
-import vehiclesImg from '../../assest/Images/vehicles.jpg';
-import realEstateImg from '../../assest/Images/real-estate.jpg';
-import furnitureImg from '../../assest/Images/Furniture.jpg';
-import jobsImg from '../../assest/Images/Jobs.jpg';
-import servicesImg from '../../assest/Images/Servies.jpg';
-import fashionImg from '../../assest/Images/fashion.jpg';
-import booksImg from '../../assest/Images/books.jpg';
 
 // Create image mapping for performance
 const imageMap: { [key: string]: string } = {
