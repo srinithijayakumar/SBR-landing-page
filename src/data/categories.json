@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Electronics",
+    "image": "Electronics.jpg",
+    "description": "Gadgets & Tech"
+  },
+  {
+    "id": 2,
+    "name": "Vehicles",
+    "image": "vehicles.jpg",
+    "description": "Cars & Bikes"
+  },
+  {
+    "id": 3,
+    "name": "Real Estate",
+    "image": "real-estate.jpg",
+    "description": "Properties"
+  },
+  {
+    "id": 4,
+    "name": "Furniture",
+    "image": "Furniture.jpg",
+    "description": "Home & Office"
+  },
+  {
+    "id": 5,
+    "name": "Jobs",
+    "image": "Jobs.jpg",
+    "description": "Career Opportunities"
+  },
+  {
+    "id": 6,
+    "name": "Services",
+    "image": "Servies.jpg",
+    "description": "Professional Services"
+  },
+  {
+    "id": 7,
+    "name": "Fashion",
+    "image": "fashion.jpg",
+    "description": "Clothing & Style"
+  },
+  {
+    "id": 8,
+    "name": "Books",
+    "image": "books.jpg",
+    "description": "Literature & Learning"
+  }
+]
