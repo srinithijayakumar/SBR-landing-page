@@ -1,5 +1,54 @@
-// Import JSON data directly (no async loading)
-import categoriesData from '../../data/categories.json';
+// Static categories data - no external dependencies
+const categoriesData = [
+  {
+    "id": 1,
+    "name": "Electronics",
+    "image": "Electronics.jpg",
+    "description": "Gadgets & Tech"
+  },
+  {
+    "id": 2,
+    "name": "Vehicles",
+    "image": "vehicles.jpg",
+    "description": "Cars & Bikes"
+  },
+  {
+    "id": 3,
+    "name": "Real Estate",
+    "image": "real-estate.jpg",
+    "description": "Properties"
+  },
+  {
+    "id": 4,
+    "name": "Furniture",
+    "image": "Furniture.jpg",
+    "description": "Home & Office"
+  },
+  {
+    "id": 5,
+    "name": "Jobs",
+    "image": "Jobs.jpg",
+    "description": "Career Opportunities"
+  },
+  {
+    "id": 6,
+    "name": "Services",
+    "image": "Servies.jpg",
+    "description": "Professional Services"
+  },
+  {
+    "id": 7,
+    "name": "Fashion",
+    "image": "fashion.jpg",
+    "description": "Clothing & Style"
+  },
+  {
+    "id": 8,
+    "name": "Books",
+    "image": "books.jpg",
+    "description": "Literature & Learning"
+  }
+];
 
 // Import images directly for better performance
 import electronicsImg from '../../assest/Images/Electronics.jpg';
@@ -32,8 +81,8 @@ interface Category {
 }
 
 export function CategoriesSection() {
-  // Map JSON data with actual images - no async operations
-  const categories: Category[] = (categoriesData as Category[]).map((category: Category) => ({
+  // Map data with actual images - no async operations
+  const categories: Category[] = categoriesData.map((category: Category) => ({
     ...category,
     image: imageMap[category.image] || category.image
   }));
