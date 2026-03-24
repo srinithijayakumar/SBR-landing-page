@@ -1,4 +1,3 @@
-import { Sparkles } from 'lucide-react';
 // Import app store logos
 import appStoreLogo from '../../assest/Images/appstore.svg';
 import playStoreLogo from '../../assest/Images/playstore.svg';

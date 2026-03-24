@@ -34,19 +34,19 @@ export function HeroSection() {
             <p className="text-mobile-xs sm:text-xl text-slate-600 leading-relaxed w-full">
               Post ads in seconds, chat directly with verified buyers, and find the best local deals securely.
             </p>
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 pt-2 sm:pt-4 w-full">
-              <button className="group flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2.5 bg-slate-900 text-white rounded-mobile sm:rounded-xl font-semibold hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex-1">
-                <img src={appStoreLogo} alt="App Store" className="w-4 sm:w-5 h-4 sm:h-5 flex-shrink-0" />
+            <div className="flex flex-col sm:flex-row gap-1.5 sm:gap-3 pt-2 sm:pt-4 w-full">
+              <button className="group flex items-center justify-center gap-1 px-1.5 sm:px-3 py-1 sm:py-2 bg-slate-900 text-white rounded-mobile sm:rounded-lg font-semibold hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex-1">
+                <img src={appStoreLogo} alt="App Store" className="w-3.5 sm:w-4 h-3.5 sm:h-4 flex-shrink-0" />
                 <div className="text-left flex-shrink-0">
-                  <div className="text-xs opacity-90">Download on the</div>
-                  <div className="text-xs sm:text-sm font-bold">App Store</div>
+                  <div className="text-[10px] sm:text-xs opacity-90">Download on the</div>
+                  <div className="text-[11px] sm:text-xs font-bold">App Store</div>
                 </div>
               </button>
-              <button className="group flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2.5 bg-slate-900 text-white rounded-mobile sm:rounded-xl font-semibold hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex-1">
-                <img src={playStoreLogo} alt="Google Play" className="w-4 sm:w-5 h-4 sm:h-5 flex-shrink-0" />
+              <button className="group flex items-center justify-center gap-1 px-1.5 sm:px-3 py-1 sm:py-2 bg-slate-900 text-white rounded-mobile sm:rounded-lg font-semibold hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex-1">
+                <img src={playStoreLogo} alt="Google Play" className="w-3.5 sm:w-4 h-3.5 sm:h-4 flex-shrink-0" />
                 <div className="text-left flex-shrink-0">
-                  <div className="text-xs opacity-90">Get it on</div>
-                  <div className="text-xs sm:text-sm font-bold">Google Play</div>
+                  <div className="text-[10px] sm:text-xs opacity-90">Get it on</div>
+                  <div className="text-[11px] sm:text-xs font-bold">Google Play</div>
                 </div>
               </button>
             </div>
