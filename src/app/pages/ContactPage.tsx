@@ -163,8 +163,8 @@ export function ContactPage() {
                       transition={{ duration: 0.5 }}
                       className="text-center py-12"
                     >
-                      <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-green-100 flex items-center justify-center">
-                        <CheckCircle className="w-8 h-8 text-green-600" />
+                      <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CheckCircle className="w-8 h-8 text-[#1C6EF2]" />
                       </div>
                       <h3 className="text-xl font-bold text-slate-900 mb-4">Message Sent Successfully!</h3>
                       <p className="text-slate-600">

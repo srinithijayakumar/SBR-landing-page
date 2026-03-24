@@ -172,7 +172,7 @@ export function HeroSection() {
             >
               <div className="bg-white/90 backdrop-blur-xl rounded-2xl p-4 shadow-2xl shadow-slate-900/10 border border-slate-100 max-w-[200px]">
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center text-white font-extrabold shadow-lg shadow-emerald-500/20">
+                  <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#1C6EF2] to-blue-600 flex items-center justify-center text-white font-extrabold shadow-lg shadow-blue-500/20">
                     ✓
                   </div>
                   <div>

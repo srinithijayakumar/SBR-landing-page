@@ -78,7 +78,7 @@ export function FeaturesSection() {
             </div>
 
             {/* Floating Badge */}
-            <div className="absolute -top-2 sm:-top-6 -right-2 sm:-right-6 bg-gradient-to-br from-green-500 to-emerald-600 text-white px-2 sm:px-6 py-1 sm:py-3 rounded-md sm:rounded-2xl shadow-xl font-bold text-mobile-xs sm:text-sm">
+            <div className="absolute -top-2 sm:-top-6 -right-2 sm:-right-6 bg-gradient-to-br from-[#1C6EF2] to-blue-600 text-white px-2 sm:px-6 py-1 sm:py-3 rounded-md sm:rounded-2xl shadow-xl font-bold text-mobile-xs sm:text-sm">
               30 sec avg.
             </div>
           </div>
@@ -141,13 +141,13 @@ export function FeaturesSection() {
             </div>
 
             {/* Floating Badge */}
-            <div className="absolute -bottom-3 sm:-bottom-6 -left-3 sm:-left-6 bg-gradient-to-br from-purple-500 to-pink-600 text-white px-2 sm:px-6 py-1 sm:py-3 rounded-md sm:rounded-2xl shadow-xl font-bold text-mobile-xs sm:text-sm">
+            <div className="absolute -bottom-3 sm:-bottom-6 -left-3 sm:-left-6 bg-gradient-to-br from-[#1C6EF2] to-blue-600 text-white px-2 sm:px-6 py-1 sm:py-3 rounded-md sm:rounded-2xl shadow-xl font-bold text-mobile-xs sm:text-sm">
               100% Private
             </div>
           </div>
 
           <div className="space-mobile sm:space-y-6 lg:order-2 w-full">
-            <div className="inline-block px-2 sm:px-4 py-1 sm:py-2 rounded-full bg-purple-50 text-purple-600 font-semibold text-mobile-xs sm:text-sm border border-purple-100">
+            <div className="inline-block px-2 sm:px-4 py-1 sm:py-2 rounded-full bg-blue-50 text-[#1C6EF2] font-semibold text-mobile-xs sm:text-sm border border-blue-100">
               Secure Communication
             </div>
             <h2 className="text-mobile-lg sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -158,14 +158,14 @@ export function FeaturesSection() {
             </p>
             <ul className="space-mobile sm:space-y-4 pt-1 sm:pt-4">
               <li className="flex items-start gap-1 sm:gap-3">
-                <div className="w-4 sm:w-6 h-4 sm:h-6 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-1">
-                  <MessageCircle className="w-2 sm:w-4 h-2 sm:h-4 text-purple-600" />
+                <div className="w-4 sm:w-6 h-4 sm:h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-1">
+                  <MessageCircle className="w-2 sm:w-4 h-2 sm:h-4 text-[#1C6EF2]" />
                 </div>
                 <span className="text-slate-700 text-mobile-xs sm:text-base">Real-time messaging with read receipts</span>
               </li>
               <li className="flex items-start gap-1 sm:gap-3">
-                <div className="w-4 sm:w-6 h-4 sm:h-6 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-1">
-                  <ImageIcon className="w-2 sm:w-4 h-2 sm:h-4 text-purple-600" />
+                <div className="w-4 sm:w-6 h-4 sm:h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-1">
+                  <ImageIcon className="w-2 sm:w-4 h-2 sm:h-4 text-[#1C6EF2]" />
                 </div>
                 <span className="text-slate-700 text-mobile-xs sm:text-base">Share additional photos during negotiation</span>
               </li>

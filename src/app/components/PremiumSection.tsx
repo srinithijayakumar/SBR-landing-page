@@ -49,8 +49,8 @@ export function PremiumSection() {
             </div>
 
             {/* Feature 2 */}
-            <div className="group relative bg-white rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-slate-200/50 hover:shadow-xl hover:shadow-purple-500/20 border border-slate-200/50">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 transition-transform">
+            <div className="group relative bg-white rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-slate-200/50 hover:shadow-xl hover:shadow-blue-500/20 border border-slate-200/50">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#1C6EF2] to-blue-600 flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 transition-transform">
                 <BarChart3 className="w-7 h-7 text-white" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-3">Performance Dashboard</h3>
@@ -58,16 +58,16 @@ export function PremiumSection() {
                 Track views, clicks, and engagement in real-time. Get insights to optimize your listings and pricing.
               </p>
               <div className="mt-6 pt-6 border-t border-slate-200">
-                <div className="flex items-center gap-2 text-purple-600 font-semibold">
-                  <span className="h-2 w-2 rounded-full bg-purple-500" />
+                <div className="flex items-center gap-2 text-[#1C6EF2] font-semibold">
+                  <span className="h-2 w-2 rounded-full bg-[#1C6EF2]" />
                   <span className="text-sm">Live Analytics</span>
                 </div>
               </div>
             </div>
 
             {/* Feature 3 */}
-            <div className="group relative bg-white rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-slate-200/50 hover:shadow-xl hover:shadow-green-500/20 border border-slate-200/50">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 transition-transform">
+            <div className="group relative bg-white rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 shadow-lg shadow-slate-200/50 hover:shadow-xl hover:shadow-blue-500/20 border border-slate-200/50">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#1C6EF2] to-blue-600 flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 transition-transform">
                 <CreditCard className="w-7 h-7 text-white" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-3">Secure Payments</h3>
@@ -75,8 +75,8 @@ export function PremiumSection() {
                 Accept payments directly through the app. Support for UPI, credit cards, debit cards, and digital wallets.
               </p>
               <div className="mt-6 pt-6 border-t border-slate-200">
-                <div className="flex items-center gap-2 text-green-600 font-semibold">
-                  <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                <div className="flex items-center gap-2 text-[#1C6EF2] font-semibold">
+                  <span className="h-2 w-2 rounded-full bg-[#1C6EF2]" />
                   <span className="text-sm">Bank-Level Security</span>
                 </div>
               </div>

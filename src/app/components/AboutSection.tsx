@@ -74,8 +74,8 @@ export function AboutSection() {
             </p>
             <div className="space-mobile sm:space-y-4">
               <div className="flex items-start gap-2 sm:gap-3">
-                <div className="w-4 sm:w-6 h-4 sm:h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-1">
-                  <div className="w-2 sm:w-3 h-2 sm:h-3 rounded-full bg-green-500" />
+                <div className="w-4 sm:w-6 h-4 sm:h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-1">
+                  <div className="w-2 sm:w-3 h-2 sm:h-3 rounded-full bg-[#1C6EF2]" />
                 </div>
                 <span className="text-mobile-xs sm:text-base text-slate-700">Secure and verified transactions</span>
               </div>
@@ -86,8 +86,8 @@ export function AboutSection() {
                 <span className="text-mobile-xs sm:text-base text-slate-700">Community-focused marketplace</span>
               </div>
               <div className="flex items-start gap-2 sm:gap-3">
-                <div className="w-4 sm:w-6 h-4 sm:h-6 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-1">
-                  <div className="w-2 sm:w-3 h-2 sm:h-3 rounded-full bg-purple-500" />
+                <div className="w-4 sm:w-6 h-4 sm:h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-1">
+                  <div className="w-2 sm:w-3 h-2 sm:h-3 rounded-full bg-[#1C6EF2]" />
                 </div>
                 <span className="text-mobile-xs sm:text-base text-slate-700">Easy-to-use mobile experience</span>
               </div>
@@ -95,7 +95,7 @@ export function AboutSection() {
           </div>
 
           <div className="relative">
-            <div className="bg-gradient-to-br from-[#1C6EF2] to-purple-600 rounded-mobile sm:rounded-3xl p-6 sm:p-8 text-white shadow-2xl shadow-blue-500/20">
+            <div className="bg-gradient-to-br from-[#1C6EF2] to-blue-600 rounded-mobile sm:rounded-3xl p-6 sm:p-8 text-white shadow-2xl shadow-blue-500/20">
               <h4 className="text-mobile-base sm:text-xl font-bold mb-3 sm:mb-4">
                 Why Choose SBR?
               </h4>
