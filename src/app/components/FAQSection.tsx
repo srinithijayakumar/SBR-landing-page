@@ -5,7 +5,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from './ui/accordion';
-
 const faqs = [
   {
     question: 'Is it free to post an ad?',
@@ -28,7 +27,6 @@ const faqs = [
       'Premium ads get priority placement, richer analytics, and optional secure payments—helping you close deals faster with higher-quality buyer intent.',
   },
 ];
-
 export function FAQSection() {
   return (
     <section id="faq" className=" py-12 sm:py-24 scroll-mt-24 mx-4 sm:mx-20">
@@ -47,7 +45,6 @@ export function FAQSection() {
             Everything you need to know to start buying and selling confidently.
           </p>
         </motion.div>
-
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}

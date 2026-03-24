@@ -1,9 +1,7 @@
 import { Sparkles } from 'lucide-react';
-
 // Import app store logos
 import appStoreLogo from '../../assest/Images/appstore.svg';
 import playStoreLogo from '../../assest/Images/playstore.svg';
-
 export function CTASection() {
   return (
     <section className="py-16 sm:py-24 bg-white">
@@ -20,21 +18,16 @@ export function CTASection() {
             backgroundSize: '80px 140px',
             backgroundPosition: '0 0, 0 0, 40px 70px, 40px 70px'
           }} />
-
           {/* Content */}
           <div className="relative py-12 sm:py-20 px-4 sm:px-8 lg:px-16 text-center space-y-6 sm:space-y-8">
-            
-
             {/* Heading */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
               Download Now
             </h2>
-
             {/* Subheading */}
             <p className="text-lg sm:text-xl text-blue-50 max-w-2xl mx-auto">
               Join thousands of users on SBR today and experience the future of local classifieds.
             </p>
-
             {/* Download Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-2 sm:pt-4 ">
               <button className="group flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-slate-900 text-white rounded-2xl font-semibold bg-slate-900 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
@@ -44,7 +37,6 @@ export function CTASection() {
                   <div className="text-sm sm:text-base font-bold  ">App Store</div>
                 </div>
               </button>
-
               <button className="group flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-slate-900 text-white rounded-2xl font-semibold hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
                 <img src={playStoreLogo} alt="Google Play" className="w-5 sm:w-6 h-5 sm:h-6" />
                 <div className="text-left">
@@ -53,7 +45,6 @@ export function CTASection() {
                 </div>
               </button>
             </div>
-
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-3xl mx-auto pt-8 sm:pt-12 border-t border-white/20">
               <div>
@@ -70,7 +61,6 @@ export function CTASection() {
               </div>
             </div>
           </div>
-
           {/* Decorative Circles */}
           <div className="absolute -top-24 -left-24 w-48 h-48 bg-white/10 rounded-full blur-3xl" />
           <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-white/10 rounded-full blur-3xl" />
